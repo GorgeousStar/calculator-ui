@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="cal">
+            <div class="head">
+                <h1>CASIO</h1> <br>
+                <input type="text" placeholder="0000000000088888888888" id="result">
+            </div>
+            <div class="down">
+                <div class="rol1">
+                <p class="ac" onclick="clearScreen()" id="btn">AC</p>
+                <p class="del" onclick="del()" >DEL</p>
+                <p class="divide" onclick="display('/')">/</p>
+            </div>
+            <div class="rol2">
+                <p class="one" onclick="display('1')">1</p>
+                <p class="two" onclick="display('2')">2</p>
+                <p class="three" onclick="display('3')">3</p>
+                <p class="multi" onclick="display('*')">*</p>
+            </div>
+            <div class="rol3">
+                <p class="four" onclick="display('4')">4</p>
+                <p class="five" onclick="display('5')">5</p>
+                <p class="six" onclick="display('6')">6</p>
+                <p class="plus" onclick="display('+')">+</p>
+            </div>
+            <div class="rol4">
+                <p class="seven" onclick="display('7')">7</p>
+                <p class="eight" onclick="display('8')">8</p>
+                <p class="nine" onclick="display('9')">9</p>
+                <p class="minus" onclick="display('-')">-</p>
+            </div>
+            <div class="rol5">
+                <p class="dot" onclick="display('.')">.</p>
+                <p class="zero" onclick="display('0')">0</p>
+                <p class="equal" onclick="calculate()" id="btn">=</p>
+            </div>
+
+            <p class="copy"> @GorgeousStar</p> 
+            </div>
+        </div>
+    </div>
+
+    <script src="cal.js"></script>
+</body>
+</html>
